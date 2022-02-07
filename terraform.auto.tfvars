@@ -15,37 +15,37 @@
 #cloud_api_key_id = ""
 
 #Common workspaces
-ikswsname = "rtp-iks-demo-01"
+ikswsname    = "rtp-iks-demo-01"
 globalwsname = "rtp-iks-demo-01-global"
 
 
 #Configurable and to be uploaded based on sandbox env
-clustername = "rtp-iks-demo-01"
-ippool_list = "rtp-iks-demo-01-ippool"
+clustername = "bxb-hxanvme-tftesting"
+ippool_list = "rtp-iks-demo-01-ippool" ##### not sure here
 
 #All these are params used in k8s policy settings
-infra_config_policy = "rtp-iks-demo-01-infra-config-policy"
-ip_pool_policy = "rtp-iks-demo-01-ip-pool-policy"
-masterip_pool_policy = "rtp-iks-demo-01-ip-pool-policy"
-workerip_pool_policy = "rtp-iks-demo-01-ip-pool-policy"
-network_pod = "rtp-iks-demo-01-pod"
-network_service = "rtp-iks-demo-01-network"
-k8s_version = "1.20.14"
-k8s_version_name = "rtp-iks-demo-01-1.20.14"
-masterinstance = "rtp-iks-demo-01-master-instance"
-mgmtcfgetcd = false
-mgmtcfglbcnt = 3
-mgmtcfgsshuser = "iksadmin"
-mastergrpname = "rtp-iks-demo-01-master-pool"
-masterdesiredsize = 1
-workergrpname = "rtp-iks-demo-01-worker-pool"
-workerdesiredsize = 0
-masterinfraname = "rtp-iks-demo-01-masterinfraname"
-infrapolname = "rtp-iks-demo-01-infra-config-policy"
-instancetypename = "rtp-iks-demo-01-master-instance"
+infra_config_policy  = "BXB-aNVMe-K8s-VMInfra"
+ip_pool_policy       = "BXB-HXaNVMe-K8s-Pool-15"
+masterip_pool_policy = "BXB-HXaNVMe-K8s-Pool-15"
+workerip_pool_policy = "BXB-HXaNVMe-K8s-Pool-15"
+network_pod          = "rtp-iks-demo-01-pod"     #### I think this is referencing a secure variable
+network_service      = "rtp-iks-demo-01-network" #### I think this is referencing a secure variable
+k8s_version          = "1.20.14"
+k8s_version_name     = "K8s-Version-Policy-1.20.14-iks.0"
+masterinstance       = "BXB-HXaNVMe-K8s-VMInstance"
+mgmtcfgetcd          = false
+mgmtcfglbcnt         = 3
+mgmtcfgsshuser       = "iksadmin"
+mastergrpname        = "rtp-iks-demo-01-master-pool" #### I think this is a variable in TFCB? or maybe devnet code?
+masterdesiredsize    = 1
+workergrpname        = "rtp-iks-demo-01-worker-pool" #### I think this is a variable in TFCB? or maybe devnet code?
+workerdesiredsize    = 0
+masterinfraname      = "rtp-iks-demo-01-masterinfraname" #### I think this is a variable in TFCB? or maybe devnet code?
+infrapolname         = "BXB-aNVMe-K8s-VMInfra"
+instancetypename     = "BXB-HXaNVMe-K8s-VMInstance"
 #network params
-timezone = "Etc/GMT"
-domain_name = "dcv.svpod"
+timezone    = "America/Los_Angeles"
+domain_name = "cloudtsa.local"
 
 
 
